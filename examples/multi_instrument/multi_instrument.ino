@@ -89,7 +89,7 @@ void LoadInstruments()
     wt_inst_old = sf22aswt_reader2_inst;
     if (sf22aswt_reader2.Load_instrument(1, sf22aswt_reader2_inst) == true)
     {
-        wavetable1.setInstrument(*sf22aswt_reader2_inst);
+        wavetable2.setInstrument(*sf22aswt_reader2_inst);
         if(wt_inst_old != nullptr)
         {
             delete wt_inst_old;
@@ -105,7 +105,7 @@ void LoadInstruments()
     wt_inst_old = sf22aswt_reader3_inst;
     if (sf22aswt_reader3.Load_instrument(2, sf22aswt_reader3_inst) == true)
     {
-        wavetable1.setInstrument(*sf22aswt_reader3_inst);
+        wavetable3.setInstrument(*sf22aswt_reader3_inst);
         if(wt_inst_old != nullptr)
         {
             delete wt_inst_old;
